@@ -19,7 +19,7 @@ int freeArray(int *a); //배열에 할당된 메모리 해제 함수 선언
 void printArray(int *a); //배열 프린트 함수 선언 
 
 int selectionSort(int *a); //선택정렬함수
-int insertionSort(int *a); //정렬에 삽입 
+int insertionSort(int *a); //삽입 정렬 함수
 int bubbleSort(int *a); //버블정렬함수
 int shellSort(int *a); //셸 정렬 함수
 /* recursive function으로 구현 */
@@ -73,7 +73,7 @@ int main()
 			selectionSort(array); //선택정렬
 			break;
 		case 'i': case 'I':
-			insertionSort(array); //배열에 삽입
+			insertionSort(array); //삽입정렬
 			break;
 		case 'b': case 'B':
 			bubbleSort(array); //버블정렬
@@ -193,7 +193,7 @@ int selectionSort(int *a) //선택정렬
 	return 0;
 }
 
-int insertionSort(int *a) //삽입
+int insertionSort(int *a) //삽입정렬
 {
 	int i, j, t;
 
