@@ -360,9 +360,9 @@ int hashing(int *a, int **ht)
 
 			while(hashtable[index] != -1) //hashtable[index]가 -1이 아닐 동안
 			{
-				index = (++index) % MAX_HASH_TABLE_SIZE;
+				index = (++index) % MAX_HASH_TABLE_SIZE; //index에 증가된 index로 hashtable 크기로 나눈 나머지 값 저장
 				/*
-				printf("index = %d\n", index);
+				printf("index = %d\n", index); //index값 출력
 				*/
 			}
 			hashtable[index] = key; //hashtable[index]에 key 저장
