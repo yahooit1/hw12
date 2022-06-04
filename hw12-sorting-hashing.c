@@ -42,7 +42,7 @@ int main()
 	int *array = NULL; //정수형 포인터 array 선언 후 초기화
 	int *hashtable = NULL; //정수형 포인터 hashtable 선언 후 초기화 
 	int key = -1; //해싱을 위한 정수형 변수 key 선언 후 초기화
-	int index = -1;
+	int index = -1; //index를 -1로 초기화
 
 	srand(time(NULL)); //난수 생성
 
